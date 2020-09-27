@@ -15,7 +15,7 @@ import java.util.Date;
 @ToString
 
 @Entity
-public class QIndividualList implements QList{
+public class QIndividualList{
     @Id
     private BigInteger individualQUID;
     private BigInteger uniqSrcSystemId;

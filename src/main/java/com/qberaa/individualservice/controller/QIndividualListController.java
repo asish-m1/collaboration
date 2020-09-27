@@ -20,7 +20,7 @@ public class QIndividualListController {
         return "Hello World";
     }
 
-    @RequestMapping("/individualList")
+    @RequestMapping("/getIndividualList")
     public List<QIndividualList> getIndividuals(){
         return qIndividualService.getAllIndividuals();
     }
