@@ -15,7 +15,6 @@ import java.util.Date;
 @ToString
 
 @Entity
-@Table(name = "QIndividualList")
 public class QIndividualList implements QList{
     @Id
     private BigInteger individualQUID;
