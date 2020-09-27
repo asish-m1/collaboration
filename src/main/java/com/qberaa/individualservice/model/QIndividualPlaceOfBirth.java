@@ -2,6 +2,8 @@ package com.qberaa.individualservice.model;
 
 import lombok.*;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import java.math.BigInteger;
 
 @Getter
@@ -9,16 +11,15 @@ import java.math.BigInteger;
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
-public class QListIndividualAddress {
-
-    private BigInteger addessQUID;
+@Entity
+public class QIndividualPlaceOfBirth {
+    @Id
+    private BigInteger placeOfBirthQUID;
     private BigInteger individualQUID;
     private BigInteger uniqSrcSystemId;
     private String srcSystem;
-    private String street;
     private String city;
     private String state_Province;
-    private String zipCode;
     private String country;
     private String remarks;
 }

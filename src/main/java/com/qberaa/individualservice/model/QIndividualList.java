@@ -2,6 +2,9 @@ package com.qberaa.individualservice.model;
 
 import lombok.*;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
 import java.math.BigInteger;
 import java.util.Date;
 
@@ -10,15 +13,18 @@ import java.util.Date;
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
-public class QListIndividual implements QList{
 
+@Entity
+@Table(name = "QIndividualList")
+public class QIndividualList implements QList{
+    @Id
     private BigInteger individualQUID;
     private BigInteger uniqSrcSystemId;
     private String srcSystem;
     private String srcProgramList;
     private String name;
-    private String name_Original_Lang;
+    private String nameOriginalLang;
     private String gender;
-    private Date elf_from_Date;
-    private Date elf_End_Date;
+    private Date elfFromDate;
+    private Date elfEndDate;
 }

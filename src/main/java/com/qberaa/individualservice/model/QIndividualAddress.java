@@ -9,11 +9,16 @@ import java.math.BigInteger;
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
-public class QListIndividualNationality {
+public class QIndividualAddress {
 
-    private BigInteger nationalityQUID;
+    private BigInteger addessQUID;
     private BigInteger individualQUID;
     private BigInteger uniqSrcSystemId;
     private String srcSystem;
-    private String nationality;
+    private String street;
+    private String city;
+    private String state_Province;
+    private String zipCode;
+    private String country;
+    private String remarks;
 }

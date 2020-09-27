@@ -10,16 +10,16 @@ import java.util.Date;
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
-public class QListIndividualAlias {
+public class QIndividualDOB {
 
-    private BigInteger aliasQUID;
+    private BigInteger dobQUID;
     private BigInteger individualQUID;
     private BigInteger uniqSrcSystemId;
     private String srcSystem;
     private String qualityOfData;
-    private String aliasName;
     private Date dateOfBirth;
-    private String cityOfBirth;
-    private String countryOfBirth;
+    private String birthYear;
+    private String birthFromYear;
+    private String birthToYear;
     private String remarks;
 }

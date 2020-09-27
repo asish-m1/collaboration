@@ -10,18 +10,16 @@ import java.util.Date;
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
-public class QListIndividualDocument {
+public class QIndividualAlias {
 
-    private BigInteger documentQUID;
+    private BigInteger aliasQUID;
     private BigInteger individualQUID;
     private BigInteger uniqSrcSystemId;
     private String srcSystem;
-    private String typeOfDoc;
-    private String typeOfSubDoc;
-    private String docNumber;
-    private String issuingCountry;
-    private Date dateOfIssue;
-    private String cityOfIssue;
-    private String countryOfIssue;
+    private String qualityOfData;
+    private String aliasName;
+    private Date dateOfBirth;
+    private String cityOfBirth;
+    private String countryOfBirth;
     private String remarks;
 }

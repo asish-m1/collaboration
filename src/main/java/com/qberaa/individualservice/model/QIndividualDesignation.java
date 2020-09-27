@@ -9,7 +9,7 @@ import java.math.BigInteger;
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
-public class QListIndividualDesignation {
+public class QIndividualDesignation {
 
     private BigInteger designationQUID;
     private BigInteger individualQUID;
